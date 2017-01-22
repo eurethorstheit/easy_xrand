@@ -19,5 +19,6 @@ for key in Auswahl[1:len(Auswahl)]: # Erster Eintrag ist doppelt, deswegen ohne 
 	print(str(Zaehler) + ": "+str(key))
 	Zaehler += 1
 print("------------")
-auswahl = Auswahl[int(input("Wähle eine Nummer: "))-1]
-subprocess.Popen(["xrandr","-s",auswahl])
+wahl = Auswahl[int(input("Wähle eine Nummer: "))-1]
+
+subprocess.Popen(["xrandr","-s",wahl])
